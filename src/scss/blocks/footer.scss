@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  align-items: center;
+
+  margin-top: 167px;
+  padding: 0 8px;
+
+  background: #F2F2F2;
+
+  @media (max-width: 1200px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 50px;
+
+    justify-content: space-between;
+  }
+
+  &-help {
+    color: $blue;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    margin: 24px 24px 24px auto;
+    padding: 15px 21px;
+
+    background: #F7FAFF;
+    border-radius: 6px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    transition: ease .3s;
+
+    &:hover {
+      color: #F7FAFF;
+
+      background: $blue;
+    }
+
+    @media (max-width: 480px) {
+      margin: 24px;
+    }
+  }
+}

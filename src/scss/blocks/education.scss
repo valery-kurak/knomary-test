@@ -1,0 +1,179 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-gap: 13px;
+
+  margin-top: 16px;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.tab {
+  color: $gray;
+
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+
+  padding: 8px 16px;
+
+  background: #F8F8F8;
+  border-radius: 40px;
+
+  cursor: pointer;
+
+  transition: ease .3s;
+
+  &-active, &:hover {
+    color: $white;
+
+    background: $blue;
+  }
+
+  &-active &-count span {
+    opacity: .8;
+  }
+
+  &-count {
+    background: $yellow;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+    padding: 0 3px;
+
+    border-radius: 4px;
+
+    span {
+      color: $black;
+    }
+  }
+}
+
+.education {
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+
+    margin-top: 24px;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+
+      grid-gap: 40px;
+    }
+  }
+
+  &__card {
+    max-width: 330px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &--img {
+      width: 330px;
+      height: 200px;
+
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+
+      display: block;
+    }
+
+    &--info {
+      padding: 16px;
+
+      border: 1px solid #E9EBF0;
+      border-radius: 0px 0px 9px 9px;
+    }
+
+    &--progress {
+      display: flex;
+      justify-content: space-between;
+
+      color: $gray;
+
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &--no-progress .card-name {
+      margin-top: 8px;
+      margin-bottom: 36px;
+    }
+
+    &--date {
+      display: flex;
+      align-items: center;
+      grid-gap: 10px;
+
+      margin-top: 16px;
+
+      &-availabled {
+        color: $gray;
+
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.card-name {
+  color: $black;
+
+  display: block;
+
+  height: 52px;
+
+  margin-top: 16px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+
+  transition: ease .3s;
+
+  @media (max-width: 480px) {
+    height: auto;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.progress-bar {
+
+  &__track {
+    height: 4px;
+
+    margin-top: 8px;
+
+    background: #DBDEE5;
+
+    border-radius: 10px;
+  }
+
+  &__line {
+    height: 4px;
+
+    background-color: $green;
+
+    width: 0%;
+  }
+}

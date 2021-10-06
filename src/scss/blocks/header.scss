@@ -1,0 +1,111 @@
+.header {
+  box-shadow: 0px 1px 0px #E9EBF0;
+
+  background: $white;
+
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  &__sticky--active {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+
+  &__nav {
+    display: flex;
+    grid-gap: 32px;
+
+    margin-left: 40px;
+
+    @media (max-width: 1200px) {
+      grid-gap: 28px;
+    }
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    &-mob {
+      display: none;
+
+      grid-gap: 15px;
+
+      width: 100%;
+
+      padding: 20px;
+
+      background: #F7F7F7;
+
+      position: absolute;
+      top: 65px;
+      left: 0;
+
+      transition: .3s all;
+
+      @media (max-width: 338px) {
+        top: 79px;
+      }
+    }
+
+    &--link {
+      color: $black;
+
+      padding: 24px 0;
+
+      font-size: 14px;
+      line-height: 16px;
+
+      transition: ease .3s;
+
+      @media (max-width: 992px) {
+        padding: 10px 0;
+        line-height: 0px;
+        font-size: 14px;
+
+        width: max-content;
+      }
+
+      &:hover {
+        color: $blue;
+
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+}
+
+.non-active {
+  color: $gray;
+
+  pointer-events: none;
+}
+
+.current-link {
+  color: $blue;
+
+  border-bottom: 1px solid $blue;
+}
+
+.burger-menu {
+  display: none;
+
+  @media (max-width: 992px) {
+      display: block;
+
+      order: 1;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.burger__open,
+.burger__not-open {
+  width: 20px;
+  height: 20px;
+}
+
+.menu-grid {
+  display: grid;
+}

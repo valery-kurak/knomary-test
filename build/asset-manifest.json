@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.533e8651.chunk.css",
+    "main.js": "/static/js/main.d045a531.chunk.js",
+    "main.js.map": "/static/js/main.d045a531.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.91999464.js",
+    "runtime-main.js.map": "/static/js/runtime-main.91999464.js.map",
+    "static/js/2.0638e831.chunk.js": "/static/js/2.0638e831.chunk.js",
+    "static/js/2.0638e831.chunk.js.map": "/static/js/2.0638e831.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.533e8651.chunk.css.map": "/static/css/main.533e8651.chunk.css.map",
+    "static/js/2.0638e831.chunk.js.LICENSE.txt": "/static/js/2.0638e831.chunk.js.LICENSE.txt",
+    "static/media/burger.a1813f86.svg": "/static/media/burger.a1813f86.svg",
+    "static/media/comment.67a533a5.svg": "/static/media/comment.67a533a5.svg",
+    "static/media/cross.943abe94.svg": "/static/media/cross.943abe94.svg",
+    "static/media/date.3bfc16e1.svg": "/static/media/date.3bfc16e1.svg",
+    "static/media/like.1710469e.svg": "/static/media/like.1710469e.svg",
+    "static/media/user-avatar.4f964cdd.svg": "/static/media/user-avatar.4f964cdd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91999464.js",
+    "static/js/2.0638e831.chunk.js",
+    "static/css/main.533e8651.chunk.css",
+    "static/js/main.d045a531.chunk.js"
+  ]
+}

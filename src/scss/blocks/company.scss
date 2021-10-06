@@ -1,0 +1,81 @@
+.company {
+  display: flex;
+  align-items: center;
+
+  margin: auto 24px;
+
+  @media (max-width: 992px) {
+    justify-content: space-between;
+    grid-gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    grid-gap: 0px;
+
+    margin: auto 12px;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+  }
+
+  &-name {
+    color: $black;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  &-desc {
+    color: $white;
+    background: $blue;
+
+    padding: 3px 4px;
+
+    border-radius: 4px;
+  }
+
+  &__user {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+
+    @media (max-width: 992px) {
+      padding: 12px 0;
+      margin-left: inherit;
+    }
+
+    &--avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--info {
+      display: grid;
+    }
+
+    &--name {
+      color: #000;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    
+    &--position {
+      color: $blue;
+
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
